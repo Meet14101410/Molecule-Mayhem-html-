@@ -1,0 +1,15 @@
+let score = 0;
+const molecules = ["H₂O","CO₂","O₂","N₂","CH₄"];
+
+function spawn(){
+  const m = molecules[Math.floor(Math.random()*molecules.length)];
+  document.getElementById("mol").innerText = m;
+}
+
+function hit(){
+  score++;
+  document.getElementById("score").innerText = score;
+  spawn();
+}
+
+spawn();
