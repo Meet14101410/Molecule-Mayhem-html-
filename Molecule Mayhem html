@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Molecule Mayhem</title>
+</head>
+<body style="text-align:center;font-family:Arial">
+  <h2>Molecule Mayhem 🧪</h2>
+  <p>Score: <span id="score">0</span></p>
+  <button onclick="hit()">H₂O</button>
+  <button onclick="hit()">CO₂</button>
+  <button onclick="hit()">O₂</button>
+
+  <script>
+    let score = 0;
+    function hit(){
+      score++;
+      document.getElementById("score").innerText = score;
+    }
+  </script>
+</body>
+</html>
